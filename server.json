@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.illee/leoworks-korea-data-tools",
+  "title": "LeoWorks Korea & AliExpress Data Tools",
+  "description": "Naver Shopping rank, Korean reviews, K-beauty rankings and AliExpress data as AI agent tools.",
+  "version": "1.0.0",
+  "websiteUrl": "https://leoworks.kr/tools/",
+  "repository": {
+    "url": "https://github.com/illee/leoworks-korea-data-tools-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com/?tools=leoworks/naver-shopping-rank-tracker,leoworks/naver-blog-brand-monitor,leoworks/naver-ai-briefing-monitor,leoworks/korean-review-classifier,leoworks/kbeauty-ranking-review-monitor,leoworks/aliexpress-reviews-classifier,leoworks/aliexpress-search-scraper",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer <APIFY_TOKEN> \u2014 Apify Console \u2192 Settings \u2192 API & Integrations (or use OAuth sign-in)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
