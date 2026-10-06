@@ -26,13 +26,13 @@ claude mcp add --transport http apify "<server URL>" --header "Authorization: Be
 
 | Tool | What it does | Price |
 |---|---|---|
-| `leoworks--naver-shopping-rank-tracker` | Where a product, URL or store ranks in Naver Shopping for Korean keywords, daily, no login | $3 / 1,000 keyword checks |
+| `leoworks--naver-shopping-rank-tracker` | Where a product, URL or store ranks in Naver Shopping for Korean keywords, daily, no login | $3 / 1,000 keyword checks (+$0.50 / 1,000 competitor rows) |
 | `leoworks--naver-blog-brand-monitor` | Naver Blog posts about a brand, each labelled sponsored vs self-paid with evidence, sentiment, brand mentions | $4 / 1,000 posts + $1 / 1,000 judgments |
-| `leoworks--naver-ai-briefing-monitor` | What Naver's AI briefing answers for a keyword, which sources it cites, and whether your brand and rivals are mentioned or recommended | $3 / 1,000 queries + $12 / 1,000 briefings |
+| `leoworks--naver-ai-briefing-monitor` | What Naver's AI briefing answers for a keyword, which sources it cites, and whether your brand and rivals are mentioned or recommended | $3 / 1,000 queries + $12 / 1,000 briefings captured |
 | `leoworks--korean-review-classifier` | Complaint type, sentiment and purchase motive for any Korean review dataset (Coupang, Olive Young, Naver) — no scraping, no prompts | $0.50 / 1,000 reviews |
-| `leoworks--kbeauty-ranking-review-monitor` | K-beauty bestseller rankings (Olive Young Global, Amore Mall) with rank changes, plus reviews with complaint labels | $2 / 1,000 ranking rows |
-| `leoworks--aliexpress-reviews-classifier` | AliExpress product reviews with English translation, stars, country, SKU, photos, and optional complaint/sentiment labels | $1.50 / 1,000 reviews |
-| `leoworks--aliexpress-search-scraper` | AliExpress search results per keyword (rank, price, sold count, rating, ads flagged) and your products' keyword rank over time | $2 / 1,000 results |
+| `leoworks--kbeauty-ranking-review-monitor` | K-beauty bestseller rankings (Olive Young Global, Amore Mall) with rank changes, plus reviews with complaint labels | $2 / 1,000 ranking rows · $1 / 1,000 reviews · $0.50 / 1,000 classifications |
+| `leoworks--aliexpress-reviews-classifier` | AliExpress product reviews with English translation, stars, country, SKU, photos, and optional complaint/sentiment labels | $1.50 / 1,000 reviews + $0.50 / 1,000 classifications |
+| `leoworks--aliexpress-search-scraper` | AliExpress search results per keyword (rank, price, sold count, rating, ads flagged) and your products' keyword rank over time | $2 / 1,000 results · $3 / 1,000 rank checks |
 
 Full details, output fields and limits: each actor's page at [apify.com/leoworks](https://apify.com/leoworks) · overview: [leoworks.kr/tools](https://leoworks.kr/tools/).
 
