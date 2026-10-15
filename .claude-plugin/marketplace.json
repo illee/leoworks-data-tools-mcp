@@ -1,0 +1,15 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "leoworks",
+  "description": "LeoWorks data tools for Claude Code: Google Maps, Naver, Korean, AliExpress and multilingual review classifiers and lead data, via the official Apify MCP server.",
+  "owner": { "name": "LeoWorks", "email": "support@leoworks.kr" },
+  "plugins": [
+    {
+      "name": "leoworks-data-tools",
+      "source": "./plugins/leoworks-data-tools",
+      "description": "15 Apify actors as MCP tools: Google Maps review sentiment classifier and lead qualifier, Korean/Japanese/Spanish/Amazon review classifiers, Naver Shopping rank and blog monitors, K-beauty rankings, AliExpress reviews and search, social comment, job posting and company website classifiers.",
+      "category": "data",
+      "homepage": "https://github.com/illee/leoworks-data-tools-mcp"
+    }
+  ]
+}

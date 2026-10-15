@@ -1,0 +1,23 @@
+{
+  "name": "leoworks-data-tools",
+  "version": "1.2.0",
+  "description": "15 Apify actors as MCP tools: Google Maps review sentiment classifier and lead qualifier, Korean/Japanese/Spanish/Amazon review classifiers, Naver Shopping rank and blog monitors, K-beauty rankings, AliExpress reviews and search, social comment, job posting and company website classifiers.",
+  "author": {
+    "name": "LeoWorks",
+    "email": "support@leoworks.kr",
+    "url": "https://leoworks.kr"
+  },
+  "homepage": "https://leoworks.kr/tools/",
+  "repository": "https://github.com/illee/leoworks-data-tools-mcp",
+  "keywords": [
+    "mcp",
+    "apify",
+    "google-maps",
+    "review-classification",
+    "sentiment-analysis",
+    "lead-generation",
+    "naver",
+    "aliexpress",
+    "korean"
+  ]
+}
