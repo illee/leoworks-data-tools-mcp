@@ -3,7 +3,7 @@
   "name": "io.github.illee/leoworks-data-tools",
   "title": "LeoWorks Korea & AliExpress Data Tools",
   "description": "Naver, K-beauty and AliExpress data plus review and comment classifiers as AI agent tools.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "websiteUrl": "https://leoworks.kr/tools/",
   "repository": {
     "url": "https://github.com/illee/leoworks-data-tools-mcp",
@@ -12,11 +12,11 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://mcp.apify.com/?tools=leoworks/naver-shopping-rank-tracker,leoworks/naver-blog-brand-monitor,leoworks/naver-ai-briefing-monitor,leoworks/korean-review-classifier,leoworks/kbeauty-ranking-review-monitor,leoworks/aliexpress-reviews-classifier,leoworks/aliexpress-search-scraper,leoworks/social-comment-classifier,leoworks/japanese-review-classifier,leoworks/spanish-review-classifier",
+      "url": "https://mcp.apify.com/?tools=leoworks/naver-shopping-rank-tracker,leoworks/naver-blog-brand-monitor,leoworks/naver-ai-briefing-monitor,leoworks/korean-review-classifier,leoworks/kbeauty-ranking-review-monitor,leoworks/aliexpress-reviews-classifier,leoworks/aliexpress-search-scraper,leoworks/social-comment-classifier,leoworks/japanese-review-classifier,leoworks/spanish-review-classifier,leoworks/google-maps-review-classifier,leoworks/google-maps-lead-qualifier,leoworks/amazon-review-classifier,leoworks/job-posting-classifier,leoworks/company-website-classifier",
       "headers": [
         {
           "name": "Authorization",
-          "description": "Bearer <APIFY_TOKEN> \u2014 Apify Console \u2192 Settings \u2192 API & Integrations (or use OAuth sign-in)",
+          "description": "Bearer <APIFY_TOKEN> — Apify Console → Settings → API & Integrations (or use OAuth sign-in)",
           "isRequired": false,
           "isSecret": true
         }
