@@ -2,6 +2,8 @@
 
 `leoworks--spanish-review-classifier` · Apify actor [leoworks/spanish-review-classifier](https://apify.com/leoworks/spanish-review-classifier?utm_source=github&utm_medium=owned&utm_campaign=apify-v1&utm_content=mcp-repo) · used here as an MCP tool through the official Apify MCP server.
 
+**Code examples** (Python · JavaScript · curl · MCP config): [`examples/spanish-review-classifier/`](../examples/spanish-review-classifier/README.md)
+
 Classify Spanish customer reviews — MercadoLibre (reseñas y opiniones), AliExpress and any review scraper's dataset — into complaint types, sentiment and purchase motive with probabilities. Spanish review sentiment analysis (análisis de reseñas), no prompts, no LLM key. Beta.
 
 **People ask for this as:** *Spanish review sentiment analysis* · *MercadoLibre reviews* · *classify Spanish reviews*

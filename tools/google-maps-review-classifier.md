@@ -2,6 +2,8 @@
 
 `leoworks--google-maps-review-classifier` · Apify actor [leoworks/google-maps-review-classifier](https://apify.com/leoworks/google-maps-review-classifier?utm_source=github&utm_medium=owned&utm_campaign=apify-v1&utm_content=mcp-repo) · used here as an MCP tool through the official Apify MCP server.
 
+**Code examples** (Python · JavaScript · curl · MCP config): [`examples/google-maps-review-classifier/`](../examples/google-maps-review-classifier/README.md)
+
 Classify Google Maps reviews from any Google Maps reviews scraper's dataset: complaint types, what customers praise, serious issues (safety, discrimination, fraud), sentiment and unanswered reviews — plus a reply queue and per-place CSV. No LLM key.
 
 **People ask for this as:** *Google Maps review analysis* · *Google Maps reviews sentiment* · *classify Google Maps reviews*

@@ -2,6 +2,8 @@
 
 `leoworks--job-posting-classifier` · Apify actor [leoworks/job-posting-classifier](https://apify.com/leoworks/job-posting-classifier?utm_source=github&utm_medium=owned&utm_campaign=apify-v1&utm_content=mcp-repo) · used here as an MCP tool through the official Apify MCP server.
 
+**Code examples** (Python · JavaScript · curl · MCP config): [`examples/job-posting-classifier/`](../examples/job-posting-classifier/README.md)
+
 Classify job postings from LinkedIn, Indeed or any jobs scraper's dataset: remote / hybrid / on-site, years of experience required, employment type, visa sponsorship and whether salary is disclosed. Job data enrichment, no LLM key.
 
 **People ask for this as:** *filter LinkedIn jobs* · *visa sponsorship jobs* · *job posting classifier*

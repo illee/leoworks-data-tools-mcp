@@ -2,6 +2,8 @@
 
 `leoworks--naver-shopping-rank-tracker` · Apify actor [leoworks/naver-shopping-rank-tracker](https://apify.com/leoworks/naver-shopping-rank-tracker?utm_source=github&utm_medium=owned&utm_campaign=apify-v1&utm_content=mcp-repo) · used here as an MCP tool through the official Apify MCP server.
 
+**Code examples** (Python · JavaScript · curl · MCP config): [`examples/naver-shopping-rank-tracker/`](../examples/naver-shopping-rank-tracker/README.md)
+
 Track where your products, URLs or Smartstore stores rank in Naver Shopping search for any Korean keyword (네이버 쇼핑 순위, 스마트스토어 순위). Organic rank 1–35 plus ad slot position, price, reviews and rating — a Naver Shopping scraper built for scheduled rank monitoring.
 
 **People ask for this as:** *Naver Shopping rank* · *Smartstore rank tracker* · *Naver Shopping rank tracker*

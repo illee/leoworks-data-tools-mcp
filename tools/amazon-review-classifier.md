@@ -2,6 +2,8 @@
 
 `leoworks--amazon-review-classifier` · Apify actor [leoworks/amazon-review-classifier](https://apify.com/leoworks/amazon-review-classifier?utm_source=github&utm_medium=owned&utm_campaign=apify-v1&utm_content=mcp-repo) · used here as an MCP tool through the official Apify MCP server.
 
+**Code examples** (Python · JavaScript · curl · MCP config): [`examples/amazon-review-classifier/`](../examples/amazon-review-classifier/README.md)
+
 Classify Amazon reviews from any Amazon reviews scraper: complaint and return reasons, what buyers praise, sentiment, star-vs-text mismatch and worst variants — plus an action queue and per-product CSV. No LLM key.
 
 **People ask for this as:** *Amazon review analysis* · *Amazon review classifier* · *Amazon return reasons*

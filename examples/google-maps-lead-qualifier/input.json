@@ -1,0 +1,9 @@
+{
+  "icp": "Independent dental practices that offer cosmetic dentistry such as teeth whitening or veneers.",
+  "searchQueries": [
+    "cosmetic dentist"
+  ],
+  "location": "Chicago, USA",
+  "maxPlacesPerSearch": 10,
+  "excludeChains": true
+}
