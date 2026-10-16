@@ -2,6 +2,8 @@
 
 `leoworks--aliexpress-search-scraper` · Apify actor [leoworks/aliexpress-search-scraper](https://apify.com/leoworks/aliexpress-search-scraper?utm_source=github&utm_medium=owned&utm_campaign=apify-v1&utm_content=mcp-repo) · used here as an MCP tool through the official Apify MCP server.
 
+**Code examples** (Python · JavaScript · curl · MCP config): [`examples/aliexpress-search-scraper/`](../examples/aliexpress-search-scraper/README.md)
+
 Scrape AliExpress search results for any keyword — rank, title, price, discount, sold count, rating, ship-from and ads flagged — up to 60 pages. Rank mode tracks where your products rank for each keyword over time. No login.
 
 **People ask for this as:** *AliExpress search scraper* · *AliExpress rank tracker* · *AliExpress price and sold count*

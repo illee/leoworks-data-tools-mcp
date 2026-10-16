@@ -2,6 +2,8 @@
 
 `leoworks--korean-review-classifier` · Apify actor [leoworks/korean-review-classifier](https://apify.com/leoworks/korean-review-classifier?utm_source=github&utm_medium=owned&utm_campaign=apify-v1&utm_content=mcp-repo) · used here as an MCP tool through the official Apify MCP server.
 
+**Code examples** (Python · JavaScript · curl · MCP config): [`examples/korean-review-classifier/`](../examples/korean-review-classifier/README.md)
+
 Classify Korean customer reviews — Coupang reviews (쿠팡 리뷰), Olive Young reviews, Naver Shopping and Naver Place reviews — into complaint types, sentiment and purchase motive with probabilities. Korean review sentiment analysis for any review scraper's dataset — no scraping, no prompt writing.
 
 **People ask for this as:** *Korean review sentiment analysis* · *classify Korean reviews* · *Coupang review analysis*

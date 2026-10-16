@@ -2,6 +2,8 @@
 
 `leoworks--aliexpress-reviews-classifier` · Apify actor [leoworks/aliexpress-reviews-classifier](https://apify.com/leoworks/aliexpress-reviews-classifier?utm_source=github&utm_medium=owned&utm_campaign=apify-v1&utm_content=mcp-repo) · used here as an MCP tool through the official Apify MCP server.
 
+**Code examples** (Python · JavaScript · curl · MCP config): [`examples/aliexpress-reviews-classifier/`](../examples/aliexpress-reviews-classifier/README.md)
+
 Scrape AliExpress product reviews — text, English translation, star rating, date, buyer country, option (SKU) and photos — from any product URL. Optional AI classification adds complaint types, sentiment and purchase motive, plus a per-product summary. No login.
 
 **People ask for this as:** *AliExpress reviews scraper* · *AliExpress review analysis* · *AliExpress review complaints*

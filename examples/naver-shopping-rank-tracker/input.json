@@ -1,0 +1,18 @@
+{
+  "targets": [
+    {
+      "keyword": "무선이어폰",
+      "match": "브리츠 공식몰"
+    },
+    {
+      "keyword": "블루투스 이어폰",
+      "match": "브리츠 공식몰"
+    },
+    {
+      "keyword": "텀블러",
+      "match": "스탠리"
+    }
+  ],
+  "includeAds": true,
+  "topCompetitors": 10
+}

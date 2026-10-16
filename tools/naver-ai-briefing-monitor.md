@@ -2,6 +2,8 @@
 
 `leoworks--naver-ai-briefing-monitor` · Apify actor [leoworks/naver-ai-briefing-monitor](https://apify.com/leoworks/naver-ai-briefing-monitor?utm_source=github&utm_medium=owned&utm_campaign=apify-v1&utm_content=mcp-repo) · used here as an MCP tool through the official Apify MCP server.
 
+**Code examples** (Python · JavaScript · curl · MCP config): [`examples/naver-ai-briefing-monitor/`](../examples/naver-ai-briefing-monitor/README.md)
+
 Track your brand in Naver's AI briefing (네이버 AI 브리핑), the generative answer atop Korea's #1 search engine — Google AI Overviews for Korea. Capture the answer, cited sources, AI ads and related questions, and see if your brand or rivals are mentioned and recommended (GEO).
 
 **People ask for this as:** *Naver AI briefing* · *AI search visibility* · *GEO*

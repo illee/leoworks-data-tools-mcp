@@ -2,6 +2,8 @@
 
 `leoworks--company-website-classifier` · Apify actor [leoworks/company-website-classifier](https://apify.com/leoworks/company-website-classifier?utm_source=github&utm_medium=owned&utm_campaign=apify-v1&utm_content=mcp-repo) · used here as an MCP tool through the official Apify MCP server.
 
+**Code examples** (Python · JavaScript · curl · MCP config): [`examples/company-website-classifier/`](../examples/company-website-classifier/README.md)
+
 Classify companies from their crawled websites: industry, business type, B2B/B2C, reach and fit to your ICP — tier and reason per company, emails and socials found on the site, COMPANIES.csv. No LLM key.
 
 **People ask for this as:** *classify company websites* · *ICP fit scoring* · *B2B or B2C*

@@ -63,47 +63,56 @@ claude mcp add --transport http leoworks "<server URL>" --header "Authorization:
 
 More prompts, an input example and sample output for every tool are in [`tools/`](tools/).
 
+## Code examples (API)
+
+Call any tool without an AI agent: [`examples/`](examples/) has a folder per tool with a ready-to-run `input.json`, Python (`apify-client`), JavaScript (Node 18+) and `curl` scripts, plus the MCP setup for Claude Code, Cursor and Claude Desktop. Put your Apify token in the `APIFY_TOKEN` environment variable — the files never contain a token.
+
+```bash
+export APIFY_TOKEN="<your token>"
+python examples/korean-review-classifier/example.py
+```
+
 ## Tools
 
 ### Google Maps
 
-| Tool | What it does | Price |
-|---|---|---|
-| [`leoworks--google-maps-review-classifier`](tools/google-maps-review-classifier.md) | Classify Google Maps reviews from any Google Maps reviews scraper's dataset: complaint types, what customers praise, serious issues (safety, discrimination, fraud), sentiment and unanswered reviews — plus a reply queue and per-place CSV. No LLM key. | $0.50 / 1,000 reviews (+ compass' Google Maps scraper, billed separately, when the tool collects the reviews — see the cost note) |
-| [`leoworks--google-maps-lead-qualifier`](tools/google-maps-lead-qualifier.md) | Score Google Maps places from any Google Maps scraper against your ideal customer in plain language: lead score, tier A–D, a reason per lead, chain check, emails and socials kept, LEADS.csv. Free filters. No LLM key. | $2 / 1,000 places (+ compass' Google Maps scraper, billed separately, when the tool collects the places — see the cost note) |
+| Tool | What it does | Price | Code |
+|---|---|---|---|
+| [`leoworks--google-maps-review-classifier`](tools/google-maps-review-classifier.md) | Classify Google Maps reviews from any Google Maps reviews scraper's dataset: complaint types, what customers praise, serious issues (safety, discrimination, fraud), sentiment and unanswered reviews — plus a reply queue and per-place CSV. No LLM key. | $0.50 / 1,000 reviews (+ compass' Google Maps scraper, billed separately, when the tool collects the reviews — see the cost note) | [examples](examples/google-maps-review-classifier/) |
+| [`leoworks--google-maps-lead-qualifier`](tools/google-maps-lead-qualifier.md) | Score Google Maps places from any Google Maps scraper against your ideal customer in plain language: lead score, tier A–D, a reason per lead, chain check, emails and socials kept, LEADS.csv. Free filters. No LLM key. | $2 / 1,000 places (+ compass' Google Maps scraper, billed separately, when the tool collects the places — see the cost note) | [examples](examples/google-maps-lead-qualifier/) |
 
 ### Review & comment classifiers
 
-| Tool | What it does | Price |
-|---|---|---|
-| [`leoworks--korean-review-classifier`](tools/korean-review-classifier.md) | Classify Korean customer reviews — Coupang reviews (쿠팡 리뷰), Olive Young reviews, Naver Shopping and Naver Place reviews — into complaint types, sentiment and purchase motive with probabilities. Korean review sentiment analysis for any review scraper's dataset — no scraping, no prompt writing. | $0.50 / 1,000 reviews |
-| [`leoworks--amazon-review-classifier`](tools/amazon-review-classifier.md) | Classify Amazon reviews from any Amazon reviews scraper: complaint and return reasons, what buyers praise, sentiment, star-vs-text mismatch and worst variants — plus an action queue and per-product CSV. No LLM key. | $0.50 / 1,000 reviews |
-| [`leoworks--japanese-review-classifier`](tools/japanese-review-classifier.md) | Classify Japanese customer reviews — Rakuten (楽天レビュー), Amazon.co.jp and any review scraper's dataset — into complaint types, sentiment and purchase motive with probabilities. Japanese review sentiment analysis (レビュー分析), no prompts, no LLM key. | $0.50 / 1,000 reviews |
-| [`leoworks--spanish-review-classifier`](tools/spanish-review-classifier.md) | Classify Spanish customer reviews — MercadoLibre (reseñas y opiniones), AliExpress and any review scraper's dataset — into complaint types, sentiment and purchase motive with probabilities. Spanish review sentiment analysis (análisis de reseñas), no prompts, no LLM key. Beta. | $0.50 / 1,000 reviews (beta) |
-| [`leoworks--social-comment-classifier`](tools/social-comment-classifier.md) | Classify Instagram, TikTok, Facebook and YouTube comments from any comment scraper's dataset: purchase intent, questions, complaints, requests, praise, spam and sentiment, with probabilities. Comment sentiment analysis, no prompts, no LLM key. | $0.50 / 1,000 comments |
+| Tool | What it does | Price | Code |
+|---|---|---|---|
+| [`leoworks--korean-review-classifier`](tools/korean-review-classifier.md) | Classify Korean customer reviews — Coupang reviews (쿠팡 리뷰), Olive Young reviews, Naver Shopping and Naver Place reviews — into complaint types, sentiment and purchase motive with probabilities. Korean review sentiment analysis for any review scraper's dataset — no scraping, no prompt writing. | $0.50 / 1,000 reviews | [examples](examples/korean-review-classifier/) |
+| [`leoworks--amazon-review-classifier`](tools/amazon-review-classifier.md) | Classify Amazon reviews from any Amazon reviews scraper: complaint and return reasons, what buyers praise, sentiment, star-vs-text mismatch and worst variants — plus an action queue and per-product CSV. No LLM key. | $0.50 / 1,000 reviews | [examples](examples/amazon-review-classifier/) |
+| [`leoworks--japanese-review-classifier`](tools/japanese-review-classifier.md) | Classify Japanese customer reviews — Rakuten (楽天レビュー), Amazon.co.jp and any review scraper's dataset — into complaint types, sentiment and purchase motive with probabilities. Japanese review sentiment analysis (レビュー分析), no prompts, no LLM key. | $0.50 / 1,000 reviews | [examples](examples/japanese-review-classifier/) |
+| [`leoworks--spanish-review-classifier`](tools/spanish-review-classifier.md) | Classify Spanish customer reviews — MercadoLibre (reseñas y opiniones), AliExpress and any review scraper's dataset — into complaint types, sentiment and purchase motive with probabilities. Spanish review sentiment analysis (análisis de reseñas), no prompts, no LLM key. Beta. | $0.50 / 1,000 reviews (beta) | [examples](examples/spanish-review-classifier/) |
+| [`leoworks--social-comment-classifier`](tools/social-comment-classifier.md) | Classify Instagram, TikTok, Facebook and YouTube comments from any comment scraper's dataset: purchase intent, questions, complaints, requests, praise, spam and sentiment, with probabilities. Comment sentiment analysis, no prompts, no LLM key. | $0.50 / 1,000 comments | [examples](examples/social-comment-classifier/) |
 
 ### Korea: Naver & K-beauty
 
-| Tool | What it does | Price |
-|---|---|---|
-| [`leoworks--naver-shopping-rank-tracker`](tools/naver-shopping-rank-tracker.md) | Track where your products, URLs or Smartstore stores rank in Naver Shopping search for any Korean keyword (네이버 쇼핑 순위, 스마트스토어 순위). Organic rank 1–35 plus ad slot position, price, reviews and rating — a Naver Shopping scraper built for scheduled rank monitoring. | $3 / 1,000 keyword checks (+$0.50 / 1,000 competitor rows) |
-| [`leoworks--naver-blog-brand-monitor`](tools/naver-blog-brand-monitor.md) | Monitor a brand or product on Naver Blog (네이버 블로그), Korea's biggest review platform. This Naver Blog scraper collects posts by keyword and labels each one sponsored (체험단/협찬) or self-paid with evidence, plus sentiment and brand mentions — Korean social listening in one run. | $4 / 1,000 posts + $1 / 1,000 judgments |
-| [`leoworks--naver-ai-briefing-monitor`](tools/naver-ai-briefing-monitor.md) | Track your brand in Naver's AI briefing (네이버 AI 브리핑), the generative answer atop Korea's #1 search engine — Google AI Overviews for Korea. Capture the answer, cited sources, AI ads and related questions, and see if your brand or rivals are mentioned and recommended (GEO). | $3 / 1,000 queries + $12 / 1,000 briefings captured |
-| [`leoworks--kbeauty-ranking-review-monitor`](tools/kbeauty-ranking-review-monitor.md) | Track K-beauty bestseller rankings on Olive Young Global (OliveYoung, 올리브영) and Amorepacific's Amore Mall (아모레몰: Sulwhasoo, Laneige, Hera…) and collect Korean cosmetics reviews with optional AI classification — complaint types, sentiment and purchase motive in Korean, English and Japanese. | $2 / 1,000 ranking rows · $1 / 1,000 reviews · $0.50 / 1,000 classifications |
+| Tool | What it does | Price | Code |
+|---|---|---|---|
+| [`leoworks--naver-shopping-rank-tracker`](tools/naver-shopping-rank-tracker.md) | Track where your products, URLs or Smartstore stores rank in Naver Shopping search for any Korean keyword (네이버 쇼핑 순위, 스마트스토어 순위). Organic rank 1–35 plus ad slot position, price, reviews and rating — a Naver Shopping scraper built for scheduled rank monitoring. | $3 / 1,000 keyword checks (+$0.50 / 1,000 competitor rows) | [examples](examples/naver-shopping-rank-tracker/) |
+| [`leoworks--naver-blog-brand-monitor`](tools/naver-blog-brand-monitor.md) | Monitor a brand or product on Naver Blog (네이버 블로그), Korea's biggest review platform. This Naver Blog scraper collects posts by keyword and labels each one sponsored (체험단/협찬) or self-paid with evidence, plus sentiment and brand mentions — Korean social listening in one run. | $4 / 1,000 posts + $1 / 1,000 judgments | [examples](examples/naver-blog-brand-monitor/) |
+| [`leoworks--naver-ai-briefing-monitor`](tools/naver-ai-briefing-monitor.md) | Track your brand in Naver's AI briefing (네이버 AI 브리핑), the generative answer atop Korea's #1 search engine — Google AI Overviews for Korea. Capture the answer, cited sources, AI ads and related questions, and see if your brand or rivals are mentioned and recommended (GEO). | $3 / 1,000 queries + $12 / 1,000 briefings captured | [examples](examples/naver-ai-briefing-monitor/) |
+| [`leoworks--kbeauty-ranking-review-monitor`](tools/kbeauty-ranking-review-monitor.md) | Track K-beauty bestseller rankings on Olive Young Global (OliveYoung, 올리브영) and Amorepacific's Amore Mall (아모레몰: Sulwhasoo, Laneige, Hera…) and collect Korean cosmetics reviews with optional AI classification — complaint types, sentiment and purchase motive in Korean, English and Japanese. | $2 / 1,000 ranking rows · $1 / 1,000 reviews · $0.50 / 1,000 classifications | [examples](examples/kbeauty-ranking-review-monitor/) |
 
 ### AliExpress
 
-| Tool | What it does | Price |
-|---|---|---|
-| [`leoworks--aliexpress-reviews-classifier`](tools/aliexpress-reviews-classifier.md) | Scrape AliExpress product reviews — text, English translation, star rating, date, buyer country, option (SKU) and photos — from any product URL. Optional AI classification adds complaint types, sentiment and purchase motive, plus a per-product summary. No login. | $1.50 / 1,000 reviews + $0.50 / 1,000 classifications |
-| [`leoworks--aliexpress-search-scraper`](tools/aliexpress-search-scraper.md) | Scrape AliExpress search results for any keyword — rank, title, price, discount, sold count, rating, ship-from and ads flagged — up to 60 pages. Rank mode tracks where your products rank for each keyword over time. No login. | $2 / 1,000 results · $3 / 1,000 rank checks |
+| Tool | What it does | Price | Code |
+|---|---|---|---|
+| [`leoworks--aliexpress-reviews-classifier`](tools/aliexpress-reviews-classifier.md) | Scrape AliExpress product reviews — text, English translation, star rating, date, buyer country, option (SKU) and photos — from any product URL. Optional AI classification adds complaint types, sentiment and purchase motive, plus a per-product summary. No login. | $1.50 / 1,000 reviews + $0.50 / 1,000 classifications | [examples](examples/aliexpress-reviews-classifier/) |
+| [`leoworks--aliexpress-search-scraper`](tools/aliexpress-search-scraper.md) | Scrape AliExpress search results for any keyword — rank, title, price, discount, sold count, rating, ship-from and ads flagged — up to 60 pages. Rank mode tracks where your products rank for each keyword over time. No login. | $2 / 1,000 results · $3 / 1,000 rank checks | [examples](examples/aliexpress-search-scraper/) |
 
 ### B2B lead data
 
-| Tool | What it does | Price |
-|---|---|---|
-| [`leoworks--company-website-classifier`](tools/company-website-classifier.md) | Classify companies from their crawled websites: industry, business type, B2B/B2C, reach and fit to your ICP — tier and reason per company, emails and socials found on the site, COMPANIES.csv. No LLM key. | $2 / 1,000 sites |
-| [`leoworks--job-posting-classifier`](tools/job-posting-classifier.md) | Classify job postings from LinkedIn, Indeed or any jobs scraper's dataset: remote / hybrid / on-site, years of experience required, employment type, visa sponsorship and whether salary is disclosed. Job data enrichment, no LLM key. | $0.50 / 1,000 postings |
+| Tool | What it does | Price | Code |
+|---|---|---|---|
+| [`leoworks--company-website-classifier`](tools/company-website-classifier.md) | Classify companies from their crawled websites: industry, business type, B2B/B2C, reach and fit to your ICP — tier and reason per company, emails and socials found on the site, COMPANIES.csv. No LLM key. | $2 / 1,000 sites | [examples](examples/company-website-classifier/) |
+| [`leoworks--job-posting-classifier`](tools/job-posting-classifier.md) | Classify job postings from LinkedIn, Indeed or any jobs scraper's dataset: remote / hybrid / on-site, years of experience required, employment type, visa sponsorship and whether salary is disclosed. Job data enrichment, no LLM key. | $0.50 / 1,000 postings | [examples](examples/job-posting-classifier/) |
 
 The two Google Maps tools can collect data for you by running compass' Google Maps scraper on your Apify account; that run is billed to you separately (see each tool page). If you already have a Google Maps dataset, pass its ID and only the classifier is billed.
 

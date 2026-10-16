@@ -2,6 +2,8 @@
 
 `leoworks--japanese-review-classifier` · Apify actor [leoworks/japanese-review-classifier](https://apify.com/leoworks/japanese-review-classifier?utm_source=github&utm_medium=owned&utm_campaign=apify-v1&utm_content=mcp-repo) · used here as an MCP tool through the official Apify MCP server.
 
+**Code examples** (Python · JavaScript · curl · MCP config): [`examples/japanese-review-classifier/`](../examples/japanese-review-classifier/README.md)
+
 Classify Japanese customer reviews — Rakuten (楽天レビュー), Amazon.co.jp and any review scraper's dataset — into complaint types, sentiment and purchase motive with probabilities. Japanese review sentiment analysis (レビュー分析), no prompts, no LLM key.
 
 **People ask for this as:** *Japanese review sentiment analysis* · *Rakuten reviews* · *classify Japanese reviews*

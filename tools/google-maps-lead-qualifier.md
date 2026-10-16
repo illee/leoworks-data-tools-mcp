@@ -2,6 +2,8 @@
 
 `leoworks--google-maps-lead-qualifier` · Apify actor [leoworks/google-maps-lead-qualifier](https://apify.com/leoworks/google-maps-lead-qualifier?utm_source=github&utm_medium=owned&utm_campaign=apify-v1&utm_content=mcp-repo) · used here as an MCP tool through the official Apify MCP server.
 
+**Code examples** (Python · JavaScript · curl · MCP config): [`examples/google-maps-lead-qualifier/`](../examples/google-maps-lead-qualifier/README.md)
+
 Score Google Maps places from any Google Maps scraper against your ideal customer in plain language: lead score, tier A–D, a reason per lead, chain check, emails and socials kept, LEADS.csv. Free filters. No LLM key.
 
 **People ask for this as:** *qualify Google Maps leads* · *Google Maps lead scoring* · *ICP fit*

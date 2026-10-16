@@ -1,0 +1,11 @@
+{
+  "queries": [
+    "라운드랩 선크림"
+  ],
+  "brandNames": [
+    "라운드랩",
+    "Round Lab"
+  ],
+  "maxPostsPerQuery": 20,
+  "sort": "recent"
+}

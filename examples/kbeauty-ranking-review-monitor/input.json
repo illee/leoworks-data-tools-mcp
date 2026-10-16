@@ -1,0 +1,11 @@
+{
+  "sources": [
+    "oliveyoung_global"
+  ],
+  "oliveyoungCategories": [
+    "skincare"
+  ],
+  "maxProductsPerRanking": 10,
+  "reviewsPerProduct": 20,
+  "classifyReviews": true
+}

@@ -2,6 +2,8 @@
 
 `leoworks--social-comment-classifier` · Apify actor [leoworks/social-comment-classifier](https://apify.com/leoworks/social-comment-classifier?utm_source=github&utm_medium=owned&utm_campaign=apify-v1&utm_content=mcp-repo) · used here as an MCP tool through the official Apify MCP server.
 
+**Code examples** (Python · JavaScript · curl · MCP config): [`examples/social-comment-classifier/`](../examples/social-comment-classifier/README.md)
+
 Classify Instagram, TikTok, Facebook and YouTube comments from any comment scraper's dataset: purchase intent, questions, complaints, requests, praise, spam and sentiment, with probabilities. Comment sentiment analysis, no prompts, no LLM key.
 
 **People ask for this as:** *Instagram comments sentiment* · *TikTok comments analyzer* · *buying intent*

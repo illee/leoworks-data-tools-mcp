@@ -2,6 +2,8 @@
 
 `leoworks--naver-blog-brand-monitor` · Apify actor [leoworks/naver-blog-brand-monitor](https://apify.com/leoworks/naver-blog-brand-monitor?utm_source=github&utm_medium=owned&utm_campaign=apify-v1&utm_content=mcp-repo) · used here as an MCP tool through the official Apify MCP server.
 
+**Code examples** (Python · JavaScript · curl · MCP config): [`examples/naver-blog-brand-monitor/`](../examples/naver-blog-brand-monitor/README.md)
+
 Monitor a brand or product on Naver Blog (네이버 블로그), Korea's biggest review platform. This Naver Blog scraper collects posts by keyword and labels each one sponsored (체험단/협찬) or self-paid with evidence, plus sentiment and brand mentions — Korean social listening in one run.
 
 **People ask for this as:** *Naver Blog scraper* · *sponsored post detection* · *Korean social listening*

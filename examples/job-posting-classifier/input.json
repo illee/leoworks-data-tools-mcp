@@ -1,0 +1,20 @@
+{
+  "skills": [
+    "Python",
+    "SQL"
+  ],
+  "jobs": [
+    {
+      "title": "Senior Data Analyst",
+      "company": "Example Co",
+      "location": "Chicago, IL",
+      "description": "Hybrid role: 3 days a week in our Chicago office. 5+ years of SQL and BI experience required. Full-time. Salary $110,000-$130,000 per year. We are unable to sponsor work visas."
+    },
+    {
+      "title": "Warehouse Associate",
+      "company": "Example Logistics",
+      "location": "Dallas, TX",
+      "description": "Entry level - no experience needed, we train you. Part-time evening shifts, in person at our Dallas warehouse. $18/hour."
+    }
+  ]
+}

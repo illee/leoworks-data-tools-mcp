@@ -2,6 +2,8 @@
 
 `leoworks--kbeauty-ranking-review-monitor` · Apify actor [leoworks/kbeauty-ranking-review-monitor](https://apify.com/leoworks/kbeauty-ranking-review-monitor?utm_source=github&utm_medium=owned&utm_campaign=apify-v1&utm_content=mcp-repo) · used here as an MCP tool through the official Apify MCP server.
 
+**Code examples** (Python · JavaScript · curl · MCP config): [`examples/kbeauty-ranking-review-monitor/`](../examples/kbeauty-ranking-review-monitor/README.md)
+
 Track K-beauty bestseller rankings on Olive Young Global (OliveYoung, 올리브영) and Amorepacific's Amore Mall (아모레몰: Sulwhasoo, Laneige, Hera…) and collect Korean cosmetics reviews with optional AI classification — complaint types, sentiment and purchase motive in Korean, English and Japanese.
 
 **People ask for this as:** *Olive Young rankings* · *K-beauty bestsellers* · *Amore Mall*
